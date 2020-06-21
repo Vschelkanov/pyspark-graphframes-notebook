@@ -39,3 +39,6 @@ edges = session.createDataFrame(
 graph = GraphFrame(nodes, edges)
 graph.inDegrees.show()
 ```
+## Links
+[Official GraphFrames User Guide](https://graphframes.github.io/graphframes/docs/_site/user-guide.html)  
+[GraphFrames User Guide - Python from databricks](https://docs.databricks.com/spark/latest/graph-analysis/graphframes/user-guide-python.html)
