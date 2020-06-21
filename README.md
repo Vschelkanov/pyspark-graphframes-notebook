@@ -5,7 +5,7 @@ I found that connecting [GraphFrames](https://github.com/graphframes/graphframes
 ```
 python 3.7
 spark 2.4
-graphframes 0.7.0
+graphframes 0.8.0
 ```
 
 Build the image and take note of the `id` to run the container. Be sure to forward port `8888` when starting it:
