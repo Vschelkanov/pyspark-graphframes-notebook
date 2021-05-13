@@ -4,15 +4,15 @@ I found that connecting [GraphFrames](https://github.com/graphframes/graphframes
 
 ```
 python 3.7
-spark 2.4
-graphframes 0.8.0
+spark 3.1
+graphframes 0.8.1
 ```
 
 Build the image and take note of the `id` to run the container. Be sure to forward port `8888` when starting it:
 
 ```bash
-docker build .
-docker run -t --rm -p 8888:8888 <image-id>
+docker build -t jupyter/pyspark-graphframes-notebook .
+docker run -t --rm -p 8888:8888 jupyter/pyspark-graphframes-notebook
 ```
 
 The terminal output will contain the notebook url (`localhost:8888`) and a token. Visit the url in a browser and use the token to authenticate.
