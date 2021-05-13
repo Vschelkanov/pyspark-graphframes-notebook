@@ -2,8 +2,8 @@ FROM jupyter/pyspark-notebook
 
 USER root
 
-RUN $SPARK_HOME/bin/spark-shell --packages graphframes:graphframes:0.8.0-spark2.4-s_2.11
-RUN wget http://dl.bintray.com/spark-packages/maven/graphframes/graphframes/0.8.0-spark2.4-s_2.11/graphframes-0.8.0-spark2.4-s_2.11.jar -qO $SPARK_HOME/jars/graphframes.jar
+RUN $SPARK_HOME/bin/spark-shell --repositories https://repos.spark-packages.org/ --packages graphframes:graphframes:0.8.1-spark3.0-s_2.12
+RUN wget https://repos.spark-packages.org/graphframes/graphframes/0.8.1-spark3.0-s_2.12/graphframes-0.8.1-spark3.0-s_2.12.jar -qO $SPARK_HOME/jars/graphframes-0.8.1-spark3.0-s_2.12.jar
 
 USER $NB_UID
 
